@@ -1,0 +1,11 @@
+@import 'generic/grid';
+@import 'generic/reset';
+@import 'settings/variables';
+@import 'elements/header';
+@import 'elements/opening-section';
+@import 'elements/sales-section';
+@import 'elements/benefits-section';
+
+body {
+    box-sizing: border-box;
+}

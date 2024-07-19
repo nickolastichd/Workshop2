@@ -1,17 +1,10 @@
-.container {
-    width: 100%;
-    max-width: 1400px;
-    margin: 0 auto;
-    padding: 0 15px;
-}
-
 .row {
     display: flex;
     flex-wrap: wrap;
 }
 
 $columns: 12;
-$column-base-width: 100% / $columns;
+$column-base-width: calc(100% / $columns);
 
 [class*="col-"] {
     min-height: 1px;
@@ -21,12 +14,20 @@ $column-base-width: 100% / $columns;
 
 @for $i from 1 through $columns {
     .col-#{$i} {
-        width: $column-base-width * $i;
+        width: calc($column-base-width * $i);
     }
 }
 
 @media (max-width: 992px) {
     [class*="col-"] {
         width: 100%;
+    }
+}
+
+@media (max-width: 1352px) {
+    .container {
+        width: 100%;
+        margin: 0 auto;
+        padding: 0 15px;
     }
 }
