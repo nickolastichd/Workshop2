@@ -31,7 +31,7 @@
                     <h1>Sell more!</h1>
                     <p>Opening shop on our platform and increase your sales</p>
                 </div>
-                <a href="#" class="opening-section-btn">Open your shop</a>
+                <button class="opening-section-btn">Open your shop</button>
                 <div class="image"></div>
             </div>
         </section>
@@ -40,18 +40,21 @@
 
         <!-- Section Sales -->
         <section class="sales-section">
-            <div class="sales-section-container">
-                <h2>The most popular sales platform in country</h2>
-                <div class="sales-section-articles">
+            <div class="container sales-section-container">
+                <div class="row">
+                    <div class="col-12">
+                        <h2>The most popular sales platform in country</h2>
+                    </div>
+                </div>
                     <div class="row">
-                        <div class="col-3">
+                        <div class="col-4">
                             <article class="article article1">
                                 <img src="scss/assets/Person.svg" alt="" />
                                 <h6 class="article-h6-first">10000+</h6>
                                 <p class="article-p-first">daily entries</p>
                             </article>
                         </div>
-                        <div class="col-3">
+                        <div class="col-4">
                             <article class="article article2">
                                 <img src="scss/assets/Eye.svg" alt="" />
                                 <h6 class="article-h6-second">2000000+</h6>
@@ -61,68 +64,126 @@
                                 </p>
                             </article>
                         </div>
-                        <div class="col-3">
+                        <div class="col-4">
                             <article class="article article3">
                                 <img src="scss/assets/Catalog.svg" alt="" />
                                 <h6 class="article-h6-third">10000+</h6>
-                                <p class="article-p-third">
-                                    added posts <br />daily
-                                </p>
+                                <p class="article-p-third">added posts <br />daily</p>
                             </article>
                         </div>
                     </div>
-                </div>
             </div>
         </section>
 
         <!-- Section Benefits -->
-        <section class="benefits-section">
+        <div class="benefits-section">
             <div class="benefits-section-container">
-                <div class="row block-1">
-                    <div class="col-7 ">
-                        <h3>Be always first</h3>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                            elit, sed do eiusmod tempor incididunt ut labore et
-                            dolore magna aliqua. Ut enim ad minim veniam.
-                        </p>
+                <div class="row benefits-first-block">
+                    <div class="col-6">
+                        <div class="left-part">
+                            <h2>Be always first</h2>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                                enim ad minim veniam.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="right-part">
+                            <div class="image">
+                                <img src="scss/assets/Macbook.png" alt="" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row benefits-second-block">
+                    <div class="col-6">
+                        <div class="left-part">
+                            <div class="image">
+                                <img src="scss/assets/iPhone.png" alt="" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="right-part">
+                            <h2>Your shop is where you are!</h2>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                                enim ad minim veniam.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row benefits-third-block">
+                    <div class="col-6">
+                        <div class="left-part">
+                            <h2>Increase recognition your brand!</h2>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                                enim ad minim veniam.
+                            </p>
+                        </div>
                     </div>
                     <div class="col-5">
-                        <img src="scss/assets/Macbook.png" alt="" />
-                        <div class="benefits-section-shape"></div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="benefits-section-second-block">
-                        <section
-                            class="benefits-section-second-shape"
-                        ></section>
-                        <img src="scss/assets/iPhone.png" alt="" />
-                        <div class="benefits-section-second-block-wrapper">
-                            <h3>Your shop is where you are!</h3>
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur
-                                adipiscing elit, sed do eiusmod tempor
-                                incididunt ut labore et dolore magna aliqua. Ut
-                                enim ad minim veniam.
-                            </p>
+                        <div class="right-part">
+                            <div class="image">
+                                <img src="scss/assets/Trumpet.png" alt="" />
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="benefits-section-third-fourth-block-wrapper">
-                        <div class="benefits-section-third-block">
-                            <h3>Increase recognition your brand!</h3>
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur
-                                adipiscing elit, sed do eiusmod tempor
-                                incididunt ut labore et dolore magna aliqua. Ut
-                                enim ad minim veniam.
-                            </p>
+            </div>
+        </div>
+
+        <!-- Section Pricing -->
+        <section class="pricing-section">
+            <div class="pricing-section-container">
+                <div class="pricing-section-articles">
+                    <div class="row">
+                        <div class="col-4">
+                            <article class="pricing-section-article-first">
+                                <h5>Basic</h5>
+                                <h6 class="pricing-section-article-first-h6">$0</h6>
+                                <ul>
+                                    <li>100 MB HDD</li>
+                                    <li>1 Subdomain</li>
+                                    <li>2 E-mails</li>
+                                    <li>Two years license</li>
+                                    <li>Full support</li>
+                                </ul>
+                                <button class="pricing-section-btn pricing-section-article-first-btn">Begin</button>
+                            </article>
                         </div>
-                    </div>
-                    <div class="benefits-section-fourth-block">
-                        <img src="scss/assets/Trumpet.png" alt="" />
+                        <div class="col-4">
+                            <article class="pricing-section-article-second">
+                                <h5>Professional</h5>
+                                <h6 class="pricing-section-article-second-h6">$25</h6>
+                                <p class="pricing-section-second-limited">Limited offer</p>
+                                <ul>
+                                    <li>500 MB HDD</li>
+                                    <li>2 Subdomains</li>
+                                    <li>5 E-mails</li>
+                                    <li>One year license</li>
+                                    <li>Full support</li>
+                                </ul>
+                                <button class="pricing-section-btn pricing-section-article-second-btn">Begin</button>
+                            </article>
+                        </div>
+                        <div class="col-4">
+                            <article class="pricing-section-article-third">
+                                <h5>Premium</h5>
+                                <h6 class="pricing-section-article-third-h6">$60</h6>
+                                <p class="pricing-section-third-limited">Limited Offer</p>
+                                <ul>
+                                    <li>2 GB HDD</li>
+                                    <li>5 Subdomains</li>
+                                    <li>20 E-mails</li>
+                                    <li>Two Years License</li>
+                                    <li>Full support</li>
+                                </ul>
+                                <button class="pricing-section-btn pricing-section-article-third-btn">Begin</button>
+                            </article>
+                        </div>
                     </div>
                 </div>
             </div>

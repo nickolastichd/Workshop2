@@ -1,0 +1,217 @@
+.pricing-section {
+    margin-top: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    @media (max-width: 992px) {
+        margin-top: 100px;
+        display: flex;
+    }
+
+    .pricing-section-container {
+        display: flex;
+        justify-content: center;
+        width: 1200px;
+
+        .pricing-section-articles {
+            justify-content: center;
+            display: flex;
+            margin-top: 50px;
+            width: 100%;
+            align-items: center;
+
+            .row {
+                display: flex;
+                width: 100%;
+
+                @media (max-width: 992px) {
+                    width: 70%;
+                }
+
+                .col-4 {
+                    margin: 100px 0;
+                }
+            }
+
+            .pricing-section-article-first,
+            .pricing-section-article-second,
+            .pricing-section-article-third {
+                --pricing-section-nonhover-height: 450px;
+                width: var(--pricing-section-nonhover-width);
+                height: var(--pricing-section-nonhover-height);
+                border-radius: 18px;
+            }
+
+            .pricing-section-article-first:hover,
+            .pricing-section-article-second:hover,
+            .pricing-section-article-third:hover {
+                --pricing-section-hover-height: 450px;
+                width: var(--pricing-section-hover-width);
+                height: var(--pricing-section-hover-height);
+                box-shadow: 5px 10px 27px $color-primary-shadow;
+            }
+
+            .pricing-section-article-first:hover h5,
+            .pricing-section-article-second:hover h5,
+            .pricing-section-article-third:hover h5 {
+                font-size: 21px;
+            }
+
+            .pricing-section-article-first,
+            .pricing-section-article-second,
+            .pricing-section-article-third {
+                transition: 300ms;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                position: relative;
+            }
+
+            .pricing-section-article-first h5,
+            .pricing-section-article-second h5,
+            .pricing-section-article-third h5 {
+                font-size: 20px;
+                font-weight: bold;
+                padding-top: 34px;
+                color: $color-black;
+                font-family: $font-raleway;
+            }
+
+            .pricing-section-article-first-h6,
+            .pricing-section-article-second-h6,
+            .pricing-section-article-third-h6 {
+                margin-top: 14px;
+                font-size: 46px;
+                font-family: $font-open-sans;
+                line-height: 2;
+                font-weight: 300;
+            }
+
+            .pricing-section-article-first ul li,
+            .pricing-section-article-second ul li,
+            .pricing-section-article-third ul li {
+                list-style-image: url(./assets/Checkmark-2.svg);
+                font-size: 14px;
+                line-height: 41px;
+                font-size: 14px;
+                color: $color-black;
+                font-family: $font-open-sans;
+                text-align: center;
+            }
+
+            .pricing-section-articles {
+                ul {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                }
+            }
+
+            .pricing-section-container {
+                .pricing-section-articles {
+                    li {
+                        position: relative;
+                        list-style-image: url(./assets/Checkmark-2.svg);
+                    }
+                }
+            }
+
+
+            .pricing-section-article-first ul li:nth-child(4),
+            .pricing-section-article-first ul li:nth-child(5),
+            .pricing-section-article-second ul li:nth-child(5) {
+                list-style-image: url(./assets/Checkmark-2.svg);
+            }
+
+            .pricing-section-article-first {
+                transition: 300ms;
+                border: 1px solid $color-redish;
+            }
+
+            .pricing-section-article-first {
+                ul {
+                    padding-top: 46px;
+                }
+            }
+
+            .pricing-section-second-limited,
+            .pricing-section-third-limited {
+                font-size: 12px;
+                font-family: $font-raleway;
+                line-height: 1;
+                color: $color-black;
+                padding-top: 5px;
+                font-weight: bold;
+            }
+
+            .pricing-section-btn {
+                --padding-nonhover-pricing-section-btn: 16px;
+                padding: var(--padding-nonhover-pricing-section-btn) 57px;
+                border: 0;
+                cursor: pointer;
+                color: white;
+                border-radius: 23px;
+                position: absolute;
+            }
+
+            .pricing-section-article-first {
+                .pricing-section-article-first-btn {
+                    transition: 300ms;
+                    bottom: calc(var(--padding-nonhover-pricing-section-btn) * -1.5);
+                    background-color: $color-redish;
+                    border: 3px solid $color-redish;
+                }
+            }
+
+            .pricing-section-article-second {
+                border: 1px solid $color-primary;
+                transition: 300ms;
+            }
+
+            .pricing-section-article-second {
+                ul {
+                    padding-top: 31px;
+                }
+            }
+
+            .pricing-section-article-second {
+                .pricing-section-article-second-btn {
+                    transition: 300ms;
+                    bottom: calc(var(--padding-nonhover-pricing-section-btn) * -1.5);
+                    border: 3px solid $color-primary;
+                    background-color: $color-primary;
+                }
+            }
+
+            .pricing-section-article-second {
+                .pricing-section-article-second-btn:hover {
+                    background-color: $color-white;
+                    color: $color-primary;
+                }
+            }
+
+            .pricing-section-article-third {
+                transition: 300ms;
+                border: 1px solid #55dfb4;
+            }
+
+            .pricing-section-article-third ul {
+                padding-top: 31px;
+            }
+
+            .pricing-section-article-third-btn {
+                transition: 300ms;
+                bottom: calc(var(--padding-nonhover-pricing-section-btn) * -1.5);
+                border: 3px solid #55dfb4;
+                background-color: #55dfb4;
+            }
+
+            .pricing-section-article-third-btn:hover {
+                color: $color-primary;
+                background-color: $color-white;
+            }
+        }
+    }
+}
